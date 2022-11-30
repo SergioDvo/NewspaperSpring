@@ -1,0 +1,7 @@
+
+newspaperList: data/newspaper.txt
+articleList: data/article.txt
+typeList: data/type.txt
+username: root
+password: root
+

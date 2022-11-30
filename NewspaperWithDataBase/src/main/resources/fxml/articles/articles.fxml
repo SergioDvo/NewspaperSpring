@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.screens.articles.ArticlesController">
+    <TableView fx:id="tableArticle" layoutX="33.0" layoutY="136.0" onMouseClicked="#counterReaders" prefHeight="230.0" prefWidth="411.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="71.0" text="Id" />
+            <TableColumn fx:id="nameArticle" prefWidth="232.0" text="Article" />
+            <TableColumn fx:id="idNewspaper" prefWidth="107.0" text="Id of Newspaper" />
+        </columns>
+    </TableView>
+    <TableView fx:id="tablaNewspaper" layoutX="33.0" layoutY="448.0" prefHeight="214.0" prefWidth="417.0">
+        <columns>
+            <TableColumn fx:id="idofNewspaper" prefWidth="72.0" text="Id" />
+            <TableColumn fx:id="nameNewspaper" prefWidth="244.0" text="Newspaper" />
+            <TableColumn fx:id="dateNewspaper" prefWidth="100.0" text="Date" />
+        </columns>
+    </TableView>
+    <Label layoutX="160.0" layoutY="50.0" prefHeight="64.0" prefWidth="187.0" text="ARTICLES">
+        <font>
+            <Font name="SansSerif Bold Italic" size="36.0" />
+        </font>
+    </Label>
+   <MFXComboBox fx:id="comboBoxType" layoutX="549.0" layoutY="63.0" onAction="#filterByType" prefWidth="150.0" />
+   <Label layoutX="450.0" layoutY="69.0" text="Filter by id">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="readersCounter" layoutX="419.0" layoutY="14.0" prefHeight="40.0" prefWidth="84.0" text="0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="315.0" layoutY="21.0" prefHeight="27.0" prefWidth="104.0" text="Readers Count:">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+    <TableView fx:id="articlesQueryTable" layoutX="461.0" layoutY="290.0" prefHeight="235.0" prefWidth="381.0">
+        <columns>
+            <TableColumn fx:id="nameArticleColumn" prefWidth="179.59998321533203" text="nameArticle" />
+            <TableColumn fx:id="readerCountColumn" prefWidth="115.60003662109375" text="Number of readers" />
+            <TableColumn fx:id="articleTypeColumn" prefWidth="87.0" text="Description" />
+        </columns>
+    </TableView>
+    <MFXButton buttonType="RAISED" layoutX="600.0" layoutY="201.0" mnemonicParsing="false" onAction="#query3" prefHeight="40.0" prefWidth="125.0" text="Query 1 Spring" />
+   <MFXButton buttonType="RAISED" layoutX="160.0" layoutY="387.0" mnemonicParsing="false" onAction="#query4" prefHeight="40.0" prefWidth="125.0" text="Query 2 Spring" />
+</AnchorPane>

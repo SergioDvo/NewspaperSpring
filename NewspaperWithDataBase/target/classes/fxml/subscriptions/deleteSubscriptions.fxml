@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.screens.deleteSubscriptions.DeleteSubscriptionsController">
+
+    <MFXButton buttonType="RAISED" layoutX="505.0" layoutY="170.0" mnemonicParsing="false" onAction="#delete" prefHeight="39.0" prefWidth="132.0" text="Cancel Subscription" />
+    <TableView fx:id="tablaSubscriptions" layoutX="23.0" layoutY="78.0" prefHeight="211.0" prefWidth="474.0">
+        <columns>
+            <TableColumn fx:id="idNewspaper" prefWidth="114.0" text="Id Newspaper" />
+            <TableColumn fx:id="signingDate" prefWidth="222.39996337890625" text="Signing Date" />
+        </columns>
+    </TableView>
+    <Label layoutX="216.0" layoutY="14.0" prefHeight="64.0" prefWidth="169.0" text="SUBSCRIPTIONS">
+        <font>
+            <Font name="SansSerif Bold Italic" size="18.0" />
+        </font>
+    </Label>
+</AnchorPane>

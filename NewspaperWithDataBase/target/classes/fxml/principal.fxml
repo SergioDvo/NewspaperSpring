@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="root" prefHeight="600.0" prefWidth="00.0"  xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.screens.principal.PrincipalController">
+    <center>
+        <StackPane prefHeight="150.0" prefWidth="200.0">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="background" BorderPane.alignment="CENTER">
+                <children>
+                    <MFXTextField fx:id="txtField" layoutX="274.0" layoutY="71.0" />
+                    <MFXButton fx:id="button" layoutX="289.0" layoutY="157.0" mnemonicParsing="false"  text="Button">
+                        <font>
+                            <Font name="Alef Regular" size="12.0" />
+                        </font>
+                    </MFXButton>
+                    <TextField fx:id="txtNormal" layoutX="242.0" layoutY="120.0" />
+                    <StackPane prefHeight="150.0" prefWidth="200.0" />
+                </children>
+            </AnchorPane>
+        </StackPane>
+    </center>
+    <top>
+        <MenuBar fx:id="menuPrincipal">
+            <menus>
+                <Menu fx:id="options" mnemonicParsing="false" text="Options">
+                    <items>
+                        <MenuItem fx:id="menuItemLogout" mnemonicParsing="false" onAction="#menuClick" text="Logout" />
+                        <MenuItem fx:id="menuItemExit" mnemonicParsing="false" onAction="#exit" text="Exit" />
+                    </items>
+                </Menu>
+                <Menu fx:id="newspaperAdmin" mnemonicParsing="false" text="Newspaper">
+                    <items>
+                        <MenuItem fx:id="listNewspaper" mnemonicParsing="false" onAction="#menuClick" text="List"/>
+                        <MenuItem fx:id="addNewspaper" mnemonicParsing="false" onAction="#menuClick" text="Add Newspaper" />
+                        <MenuItem fx:id="deleteNewspaper" mnemonicParsing="false" onAction="#menuClick" text="Delete Newspaper" />
+                        <MenuItem fx:id="updateNewspaper" mnemonicParsing="false" onAction="#menuClick" text="Update Newspaper" />
+                    </items>
+                </Menu>
+                <Menu fx:id="articleAdmin" mnemonicParsing="false" text="Article">
+                    <items>
+                        <MenuItem fx:id="listArticle" mnemonicParsing="false" onAction="#menuClick" text="List"/>
+                        <MenuItem fx:id="addArticle" mnemonicParsing="false" onAction="#menuClick" text="Add Article" />
+                        <MenuItem fx:id="deleteArticle" mnemonicParsing="false" onAction="#menuClick" text="Delete Article" />
+                        <MenuItem fx:id="updateArticle" mnemonicParsing="false" onAction="#menuClick" text="Update Article" />
+                    </items>
+                </Menu>
+                <Menu fx:id="readerAdmin" mnemonicParsing="false" text="Reader">
+                    <items>
+                        <MenuItem fx:id="listReader" mnemonicParsing="false" onAction="#menuClick" text="List"/>
+                        <MenuItem fx:id="addReader" mnemonicParsing="false" onAction="#menuClick" text="Add reader"/>
+                        <MenuItem fx:id="deleteReader" mnemonicParsing="false" onAction="#menuClick" text="Delete Reader" />
+                        <MenuItem fx:id="updateReader" mnemonicParsing="false" onAction="#menuClick" text="Update Reader" />
+                        <MenuItem fx:id="addReadArticle" mnemonicParsing="false" onAction="#menuClick" text="Add ReaderArticle" />
+                        <MenuItem fx:id="listReaderOfNewspaper" mnemonicParsing="false" onAction="#menuClick" text="Information reader" />
+                    </items>
+                </Menu>
+                <Menu fx:id="subscribeClient" mnemonicParsing="false" text="Subscribe">
+                    <items>
+                        <MenuItem fx:id="subscribeToNewspaper" mnemonicParsing="false" onAction="#menuClick" text="Subscribe to a newspaper"/>
+                        <MenuItem fx:id="unsubscribeToNewspaper" mnemonicParsing="false" onAction="#menuClick" text="Subscribe to a newspaper"/>
+                    </items>
+                </Menu>
+                <Menu fx:id="rateReadArticleClient" mnemonicParsing="false" text="Rate Article">
+                    <items>
+                        <MenuItem fx:id="rateReadArticle" mnemonicParsing="false" onAction="#menuClick" text="Rate Read Article"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>

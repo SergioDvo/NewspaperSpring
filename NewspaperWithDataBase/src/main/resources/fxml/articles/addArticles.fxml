@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.screens.addArticles.AddArticlesController">
+    <TableView fx:id="tableArticle" layoutX="43.0" layoutY="87.0" prefHeight="314.0" prefWidth="685.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="45.0" text="Id" />
+            <TableColumn fx:id="nameArticle" prefWidth="180.0" text="Article" />
+            <TableColumn fx:id="descriptionArticle" prefWidth="289.0" text="Description" />
+            <TableColumn fx:id="idNewspaper" prefWidth="104.0" text="Id of Newspaper" />
+         <TableColumn fx:id="idType" prefWidth="66.0" text="Id of Type" />
+        </columns>
+    </TableView>
+    <Label layoutX="285.0" layoutY="14.0" prefHeight="64.0" prefWidth="198.0" text="ARTICLES">
+        <font>
+            <Font name="SansSerif Bold Italic" size="36.0" />
+        </font>
+    </Label>
+   <MFXButton buttonType="RAISED" layoutX="621.0" layoutY="425.0" mnemonicParsing="false" onAction="#addArticle" prefHeight="81.0" prefWidth="107.0" text="Add">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </MFXButton>
+   <MFXTextField fx:id="txtArticleName" layoutX="228.0" layoutY="416.0" prefHeight="49.0" prefWidth="114.0" />
+   <MFXTextField fx:id="txtIdNw" layoutX="212.0" layoutY="479.0" prefHeight="49.0" prefWidth="46.0" />
+   <Label layoutX="145.0" layoutY="422.0" prefHeight="36.0" prefWidth="83.0" text="Article name">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="92.0" layoutY="485.0" prefHeight="36.0" prefWidth="107.0" text="Id of Newspaper">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <MFXTextField fx:id="txtIdType" layoutX="420.0" layoutY="479.0" prefHeight="49.0" prefWidth="49.0" />
+   <Label layoutX="342.0" layoutY="485.0" prefHeight="36.0" prefWidth="69.0" text="Id of Type">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+</AnchorPane>

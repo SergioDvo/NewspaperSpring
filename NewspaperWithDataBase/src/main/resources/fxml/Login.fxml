@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.screens.login.LoginController" style="-fx-background-color: #99ccff">
+    <children>
+        <MFXTextField fx:id="txtUserName" floatMode="BORDER" layoutX="331.0" layoutY="211.0" prefHeight="50.0" prefWidth="119.0" promptText="Username" style="-fx-alignment: center;">
+            <font>
+                <Font size="24.0" />
+            </font></MFXTextField>
+        <MFXButton fx:id="btLogin" buttonType="RAISED" layoutX="331.0" layoutY="427.0" mnemonicParsing="false" onAction="#doLogin" prefHeight="42.0" prefWidth="152.0" text="Login">
+            <font>
+                <Font size="24.0" />
+            </font></MFXButton>
+        <MFXTextField fx:id="txtPassword" floatMode="BORDER" layoutX="331.0" layoutY="313.0" prefHeight="50.0" prefWidth="119.0" promptText="Password" style="-fx-alignment: center;">
+            <font>
+                <Font size="24.0" />
+            </font></MFXTextField>
+        <Label layoutX="198.0" layoutY="116.0" prefHeight="71.0" prefWidth="392.0" style="-fx-alignment: center;" text="NEWSPAPERS">
+            <font>
+                <Font size="36.0" />
+            </font></Label>
+    </children>
+</AnchorPane>

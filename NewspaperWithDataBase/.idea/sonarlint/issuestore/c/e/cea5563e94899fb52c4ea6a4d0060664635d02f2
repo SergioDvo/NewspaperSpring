@@ -1,0 +1,15 @@
+
+v
+java:S11923"[Define a constant instead of duplicating this literal "Error reading the database" 3 times.(Ÿ§˜‚øÿÿÿÿ
+Q
+java:S1141å"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+l	java:S117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßÅëšıÿÿÿÿ
+A
+java:S1168f"+Return an empty collection instead of null.(¥¹ï
+m
+java:S3457¯"Q%n should be used in place of \n to produce the platform-specific line separator.(‘¨›ãıÿÿÿÿ
+T	java:S106¯"9Replace this use of System.out or System.err by a logger.(‘¨›ãıÿÿÿÿ
+B
+java:S1168ñ"+Return an empty collection instead of null.(¥¹ï
+B
+java:S1168õ"+Return an empty collection instead of null.(¥¹ï

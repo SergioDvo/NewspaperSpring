@@ -1,0 +1,16 @@
+
+q
+java:S4144l"VUpdate this method so that its implementation is not identical to "logout" on line 98.(·òşÿÿÿÿ
+T
+java:S1117r"9Rename "alert" which hides the field declared at line 37.(Ö×Íõÿÿÿÿÿ
+U
+java:S1117„"9Rename "alert" which hides the field declared at line 37.(Ö×Íõÿÿÿÿÿ
+N
+java:S1172˜"2Remove this unused method parameter "actionEvent".(ˆ÷‰àøÿÿÿÿ
+W	java:S125¥"<This block of commented-out lines of code should be removed.(Æ½«şıÿÿÿÿ
+R	java:S125­"<This block of commented-out lines of code should be removed.(Ï¡˜
+8	java:S131¾""Add a default case to this switch.(Ø•ƒ»
+L
+java:S1068'"6Remove this unused "pantallaBienvenida" private field.(¢Ö˜­
+G
+java:S10685"1Remove this unused "servicesLogin" private field.(…ıâÈ

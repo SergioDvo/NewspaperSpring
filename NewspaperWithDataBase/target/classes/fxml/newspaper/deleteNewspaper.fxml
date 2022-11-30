@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.screens.deleteNewspaper.DeleteNewspaperController">
+    <TableView fx:id="tablaNewspaper" layoutX="35.0" layoutY="80.0" prefHeight="163.0" prefWidth="474.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="222.39996337890625" text="Id" />
+            <TableColumn fx:id="nameNewspaper" prefWidth="79.2000732421875" text="Newspaper" />
+            <TableColumn fx:id="dateNewspaper" prefWidth="136.0" text="Date" />
+        </columns>
+    </TableView>
+    <Label layoutX="212.0" layoutY="24.0" prefHeight="64.0" prefWidth="141.0" text="NEWSPAPER">
+        <font>
+            <Font name="SansSerif Bold Italic" size="18.0" />
+        </font>
+    </Label>
+   <MFXButton buttonType="RAISED" layoutX="85.0" layoutY="306.0" mnemonicParsing="false" onAction="#deleteNewspaper" prefHeight="53.0" prefWidth="122.0" text="Delete" />
+</AnchorPane>

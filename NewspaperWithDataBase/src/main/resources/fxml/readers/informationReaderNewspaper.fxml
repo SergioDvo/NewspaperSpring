@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.screens.informationReader.InformationReaderController">
+<children>
+    <TableView fx:id="tablaReader" layoutX="14.0" layoutY="80.0" prefHeight="403.0" prefWidth="322.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="51.0" text="Id" />
+            <TableColumn fx:id="nameReader" prefWidth="171.0" text="Reader Name" />
+            <TableColumn fx:id="dateReader" prefWidth="99.0" text="Birth Date" />
+        </columns>
+    </TableView>
+    <Label layoutX="99.0" layoutY="14.0" prefHeight="64.0" prefWidth="198.0" text="READERS">
+        <font>
+            <Font name="SansSerif Bold Italic" size="36.0" />
+        </font>
+    </Label>
+    <TableView fx:id="tablaNewspaper" layoutX="455.0" layoutY="80.0" prefHeight="403.0" prefWidth="322.0">
+        <columns>
+            <TableColumn fx:id="idNewspaper" prefWidth="65.0" text="Id" />
+            <TableColumn fx:id="nameNewspaper" prefWidth="181.0" text="Newspaper" />
+            <TableColumn fx:id="dateNewspaper" prefWidth="107.0" text="Date" />
+        </columns>
+    </TableView>
+    <Label layoutX="489.0" layoutY="14.0" prefHeight="64.0" prefWidth="250.0" text="NEWSPAPER">
+        <font>
+            <Font name="SansSerif Bold Italic" size="36.0" />
+        </font>
+    </Label>
+      <Label layoutX="248.0" layoutY="497.0" prefHeight="64.0" prefWidth="322.0" text="Click one newspaper for readers information">
+         <font>
+            <Font name="SansSerif Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="357.0" layoutY="186.0" mnemonicParsing="false" onAction="#filterByNewspaper" prefHeight="47.0" prefWidth="87.0" text="Filter  Reader" />
+</children>
+</AnchorPane>
